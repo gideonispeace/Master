@@ -10,7 +10,7 @@ function getMovies(searchText){
   axios.get('https://www.omdbapi.com/?apikey=60101044&s='+searchText)
     .then((response) => {
       console.log(response);
-      let movies = response.data;
+      let movies = response.data.Search;
       let output = '';
       $.each(movies, (index, movie) => {
         output += `
@@ -43,7 +43,7 @@ function getMovie(){
   axios.get('https://www.omdbapi.com/?apikey=60101044&i='+movieId)
     .then((response) => {
       console.log(response);
-      let movie = response.data.Search;
+      let movie = response.data;
 
       let output =`
         <div class="row">
