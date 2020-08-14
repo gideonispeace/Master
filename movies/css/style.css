@@ -2,6 +2,12 @@
   width:100%;
 }
 
+.row {
+ display: flex;
+ flex-direction: row
+justify-content: space-between;
+}
+
 @media(min-width:960px){
   #movies .col-md-3 .well{
     height: 390px;
@@ -10,9 +16,4 @@
   #movies .col-md-3 img{
     height:240px;
   }
-}
-
-.col-md-4, .row .col-md-8{
-  display: inline;
-  text-aline: right; 
 }
