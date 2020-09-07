@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "html-react-sample",
   "version": "0.1.0",
@@ -32,3 +33,16 @@
     ]
   }
 }
+=======
+{
+  "name": "First-Ever-web-design",
+  "version": "1.0.0",
+  "description": "My first ever heroku deploy",
+  "scripts": {
+    "start": "harp server --port $PORT"
+  },
+  "dependencies": {
+    "harp": "*"
+  }
+}
+>>>>>>> a03dc5ea85b1c06f8defe310b1f7d2450ca81eac
